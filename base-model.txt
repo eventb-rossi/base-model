@@ -57,7 +57,7 @@ axioms
         partition(AccessRights, {Read}, {Write}, {Execute}, {Own})
     @CommonRoleType:
         CommonRole ∈ Union
-    @InductionAxiom:
+    theorem @InductionAxiom:
         ∀s · s ⊆ ℕ ∧ 0 ∈ s ∧ (∀n · n ∈ s ⇒ n + 1 ∈ s) ⇒ ℕ ⊆ s
 
 end
